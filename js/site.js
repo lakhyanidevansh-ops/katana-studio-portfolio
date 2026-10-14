@@ -13,9 +13,11 @@
   if (!data || !Array.isArray(data.categories)) return;
 
   const pad = (number) => String(number).padStart(2, "0");
-  const totalVideos = data.categories.reduce((sum, category) => sum + category.links.length, 0);
-  document.querySelector("[data-total-categories]").textContent = pad(data.categories.length);
+  const visibleCategories = data.categories.filter((category) => category.links.length > 0);
+  const totalVideos = visibleCategories.reduce((sum, category) => sum + category.links.length, 0);
+  document.querySelector("[data-total-categories]").textContent = pad(visibleCategories.length);
   document.querySelector("[data-total-videos]").textContent = pad(totalVideos);
+  document.querySelector("[data-nav-video-total]").textContent = pad(totalVideos);
   document.querySelector("[data-year]").textContent = new Date().getFullYear();
 
   const email = (data.email || "hello@yourdomain.com").trim();
@@ -29,7 +31,7 @@
 
   const playIcon = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1.15c0-.7.75-1.13 1.35-.77l7.1 4.27a1.57 1.57 0 0 1 0 2.7l-7.1 4.27C2.75 11.98 2 11.55 2 10.85z"/></svg>';
 
-  data.categories.forEach((category, categoryIndex) => {
+  visibleCategories.forEach((category, categoryIndex) => {
     const navLink = document.createElement("a");
     navLink.href = `#work-${category.id}`;
     navLink.dataset.categoryLink = category.id;
@@ -44,7 +46,7 @@
     const heading = document.createElement("div");
     heading.className = "section-heading";
     heading.innerHTML = `
-      <span class="section-number">${pad(categoryIndex + 1)} / 07</span>
+      <span class="section-number">${pad(categoryIndex + 1)} / ${pad(visibleCategories.length)}</span>
       <div class="section-heading__main">
         <div>
           <h2 id="heading-${category.id}">${category.title}</h2>
@@ -209,4 +211,3 @@
     document.querySelectorAll(".work-section").forEach((section) => observer.observe(section));
   }
 })();
-
