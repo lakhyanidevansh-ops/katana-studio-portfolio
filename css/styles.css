@@ -498,3 +498,89 @@ h1 em, h2 em { color: var(--orange); font-style: normal; }
   .contact-panel h2 { font-size: 2.85rem; }
 }
 
+/* Clear scan path for the portfolio: label, headline, description, filters, work. */
+.portfolio-intro {
+  display: block;
+  padding: 70px 0 34px;
+}
+.portfolio-intro__copy { max-width: 790px; }
+.portfolio-intro .eyebrow { margin-bottom: 0; font-size: 12px; }
+.portfolio-intro h2 {
+  max-width: 790px;
+  margin-top: 16px;
+  font-size: clamp(2.65rem, 4vw, 3.85rem);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+.portfolio-intro__note {
+  max-width: 62ch;
+  margin: 17px 0 0;
+  color: #625750;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.category-nav a {
+  padding: 13px 15px;
+  color: #5d514b;
+  font: 600 12px/1.2 var(--font-sans);
+  letter-spacing: .055em;
+}
+.category-nav a span {
+  color: #786c65;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: .08em;
+}
+.category-nav a:hover, .category-nav a[aria-current="location"] {
+  color: var(--ink);
+}
+
+.section-heading { margin-bottom: 30px; }
+.section-heading__main { display: block; }
+.section-heading h2 {
+  font-size: clamp(2rem, 2.8vw, 2.45rem);
+  line-height: 1.12;
+  letter-spacing: -.025em;
+}
+.section-heading__descriptor {
+  max-width: 620px;
+  margin-top: 10px;
+  color: #625750;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.section-number { padding-top: 8px; font-size: 12px; }
+.section-count { padding-top: 11px; font-size: 11px; }
+.section-count strong { font-size: 15px; }
+.poster-index { font-size: 11px; }
+.poster-category { font-size: 10px; }
+.work-card__caption { padding-top: 13px; }
+.work-card__title { font-size: 14px; }
+.work-card__meta { color: #71655e; font-size: 10px; }
+
+@media (max-width: 760px) {
+  .portfolio-intro { padding: 56px 0 27px; }
+  .portfolio-intro h2 { font-size: clamp(2.7rem, 8vw, 3.7rem); }
+  .portfolio-intro__note { max-width: 56ch; font-size: 16px; }
+  .category-nav a { padding: 11px 12px; font-size: 11px; }
+  .category-nav a span { font-size: 10px; }
+  .section-heading { grid-template-columns: 35px minmax(0, 1fr) auto; gap: 9px; }
+  .section-heading h2 { font-size: clamp(1.8rem, 6vw, 2.35rem); }
+  .section-heading__descriptor { font-size: 14px; }
+  .section-count { font-size: 10px; }
+  .section-count strong { font-size: 13px; }
+  .work-card__title { font-size: 13px; }
+  .work-card__meta { font-size: 9px; }
+}
+
+@media (max-width: 430px) {
+  .portfolio-intro h2 { font-size: clamp(2.4rem, 10vw, 2.85rem); }
+  .portfolio-intro__note { font-size: 15px; }
+  .section-heading { grid-template-columns: 29px minmax(0, 1fr) auto; gap: 7px; }
+  .section-heading h2 { font-size: 1.65rem; }
+  .section-heading__descriptor { font-size: 13px; }
+  .section-count { font-size: 9px; }
+  .poster-index { font-size: 9px; }
+  .poster-category { font-size: 8px; }
+}
+
