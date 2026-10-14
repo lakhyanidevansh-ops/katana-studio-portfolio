@@ -386,6 +386,8 @@ h1 em, h2 em { color: var(--orange); font-style: normal; }
 .hero-facts span { color: var(--muted); font-weight: 600; }
 
 .hero-art {
+  display: grid;
+  place-items: center;
   min-height: 390px;
   border: 1px solid var(--line);
   background: var(--surface);
