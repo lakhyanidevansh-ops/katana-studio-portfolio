@@ -1,10 +1,10 @@
 # Katana Studios
 
-A responsive, static portfolio website for Katana Studios. Open `index.html` in a browser; the site uses plain HTML, CSS and JavaScript and has no build step.
+A responsive, static portfolio website for Katana Studios. The minimal visual identity uses the studio's brushmark, warm ivory, sumi ink and burgundy (`#8C2D3E`). Open `index.html` in a browser; the site uses plain HTML, CSS and JavaScript and has no build step.
 
 ## Add the videos
 
-Edit `js/work.js` and replace the empty string in each numbered slot with a public YouTube or Google Drive URL. For example:
+Edit `js/work.js` and replace a URL in any numbered slot with a public YouTube or Google Drive URL. The portfolio is currently populated with the studio's links. For example:
 
 ```js
 "https://youtu.be/VIDEO_ID", // Ads 01 — paste video URL
@@ -22,5 +22,6 @@ Replace `hello@yourdomain.com` near the top of `js/work.js` with the studio's co
 - `css/styles.css` — design and responsive layout
 - `js/work.js` — editable categories, video links and contact email
 - `js/site.js` — project cards and embedded player
-- `assets/favicon.svg` — Katana Studios favicon
+- `assets/katana-brushmark-transparent.png` — Katana Studios logo mark
+- `assets/favicon.svg` — Katana Studios favicon in the brand palette
 
