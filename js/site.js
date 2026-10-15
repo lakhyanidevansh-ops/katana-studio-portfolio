@@ -50,7 +50,7 @@
       <div class="section-heading__main">
         <div>
           <h2 id="heading-${category.id}">${category.title}</h2>
-          <p class="section-heading__descriptor">${category.description}</p>
+          ${category.description ? `<p class="section-heading__descriptor">${category.description}</p>` : ""}
         </div>
       </div>
       <span class="section-count"><strong>${pad(category.links.length)}</strong> PROJECTS</span>
@@ -211,3 +211,4 @@
     document.querySelectorAll(".work-section").forEach((section) => observer.observe(section));
   }
 })();
+
