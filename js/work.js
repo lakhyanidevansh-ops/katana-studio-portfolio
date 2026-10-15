@@ -1,9 +1,20 @@
 /*
-  KATANA STUDIOS — PORTFOLIO LINKS
-  Keep only Google Drive previews confirmed to play.
+  KATANA STUDIOS — PORTFOLIO VIDEO ASSETS
+  Video files are hosted as GitHub Release assets.
 */
+const KATANA_VIDEO_ASSETS = "https://github.com/lakhyanidevansh-ops/katana-studios/releases/download/katana-portfolio-videos-v1/";
+const katanaVideo = (filename) => {
+  const releaseFilename = filename
+    .trim()
+    .replace(/[()]/g, "")
+    .replace(/\s+/g, ".")
+    .replace(/\.{2,}/g, ".");
+
+  return KATANA_VIDEO_ASSETS + encodeURIComponent(releaseFilename);
+};
+
 window.KATANA_WORK = {
-  email: "hello@yourdomain.com", // Replace with the studio's contact email.
+  email: "hello@yourdomain.com",
   categories: [
     {
       id: "elite",
@@ -11,17 +22,29 @@ window.KATANA_WORK = {
       cardName: "Film",
       hue: 17,
       links: [
-        "https://drive.google.com/file/d/1jKGNyn_Li96WDWeLS_NIOORCsoPm1-oa/view?usp=sharing", // Ads — Video-72566
-        "https://drive.google.com/file/d/1L6ma7Of6NcBqVB5R-V2-FvFUhUXj2eA4/view?usp=sharing", // Ads 05
-        "https://drive.google.com/file/d/1E-F5BsNZgux9IPH-zYqRq3RQTm14QK_j/view?usp=sharing", // Ads 06
-        "https://drive.google.com/file/d/1zzCKdlZQO6pDDQHkXsbrbPJUAx6AFMAq/view?usp=sharing", // Edits — f r sample
-        "https://drive.google.com/file/d/10knENNMhbkHhnxdhg0KnXAmNxkm8TQUC/view?usp=sharing", // Fashion — Video-63388
-        "https://drive.google.com/file/d/11wQU_eIWuUmckhsP2qhOdpXUX2x-HA_H/view?usp=sharing", // Music Video Reels — Video-13163
-        "https://drive.google.com/file/d/1konrV6gtdowpgyIwR6U7_qgvO9gg3Oth/view?usp=sharing", // Music Video Reels — Video-91448
-        "https://drive.google.com/file/d/1D9_EAvurU7HmXcIrCT5Y_Geoz2QYFue4/view?usp=sharing", // Music Video Reels — Video-93650
-        "https://drive.google.com/file/d/1uNwUmFkHerjhKZXyd6N_2B9wEiJluadj/view?usp=sharing", // Music Video Reels — Video-94622
-        "https://drive.google.com/file/d/1Iqo88oh3BOMGYShOt0MYfZ8q85Guj2Ri/view?usp=sharing", // Real Estate — DPA 1
-        "https://drive.google.com/file/d/1YzE9PxxOVoBWWgPq9m2xMqZuj6WpTQHG/view?usp=sharing"  // Music Video Reels 12
+        katanaVideo("Video-72566.mp4"),
+        katanaVideo("vidssave.com Behaveneu AD 1080P.mp4"),
+        katanaVideo("vidssave.com BNI commercial 720P.mp4"),
+        katanaVideo("f r sample.mp4"),
+        katanaVideo("Halucinated Vinyl Crown Promo Work.mp4"),
+        katanaVideo("portfo3.mp4"),
+        katanaVideo("profecialnal edit.mp4"),
+        katanaVideo("Video-22081.mp4"),
+        katanaVideo("Video-255.mp4"),
+        katanaVideo("Video-63388.mp4"),
+        katanaVideo("Video-78819.mp4"),
+        katanaVideo("Video-97752.mp4"),
+        katanaVideo("Video-13163.mp4"),
+        katanaVideo("Video-50818.mp4"),
+        katanaVideo("Video-71735.mp4"),
+        katanaVideo("Video-91448.mp4"),
+        katanaVideo("Video-93650.mp4"),
+        katanaVideo("Video-94622.mp4"),
+        katanaVideo("DPA 1.mp4"),
+        katanaVideo("DPA 3.mp4"),
+        katanaVideo("Serenity_Casa_10-05-25.2.mp4"),
+        katanaVideo("the garden video 1 28-5-2025.mp4"),
+        katanaVideo("the garden video 7-6-2025.mp4")
       ]
     },
     {
@@ -30,9 +53,13 @@ window.KATANA_WORK = {
       cardName: "Creator",
       hue: 29,
       links: [
-        "https://drive.google.com/file/d/1H9tHuv3OWox7mqOkU4LSTqhdZTaDw5Wu/view?usp=sharing", // Content — Video-13962
-        "https://drive.google.com/file/d/1AduT0FPjUAjkh2gqYr4WJJg-T1em8K6d/view?usp=sharing", // Content — Video-21781
-        "https://drive.google.com/file/d/1Z05wK_C2YMP1qCeF7Gt0yCCFroXnHgYD/view?usp=sharing"  // Content — Video-95748
+        katanaVideo("Video-13962.mp4"),
+        katanaVideo("Video-20696.mp4"),
+        katanaVideo("Video-21781.mp4"),
+        katanaVideo("Video-32570.mp4"),
+        katanaVideo("Video-56054.mp4"),
+        katanaVideo("Video-61774.mp4"),
+        katanaVideo("Video-95748.mp4")
       ]
     },
     {
@@ -40,7 +67,17 @@ window.KATANA_WORK = {
       title: "UGC",
       cardName: "Creator",
       hue: 14,
-      links: []
+      links: [
+        katanaVideo("2-7-26 Tech Hub Video.mp4"),
+        katanaVideo("7-7-26 Editing Creative Video.mp4"),
+        katanaVideo("A07.mp4"),
+        katanaVideo("Ahmedabad mirror  (1).mp4"),
+        katanaVideo("Ahmedabad mirror .mp4"),
+        katanaVideo("Doctor_skincare.mp4"),
+        katanaVideo("Graphic Designing Pooja Final.mp4"),
+        katanaVideo("Jigar Thakkar Final Video.mp4"),
+        katanaVideo("UGC Sample (1).mp4")
+      ]
     }
   ]
 };
