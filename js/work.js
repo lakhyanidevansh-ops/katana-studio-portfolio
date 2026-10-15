@@ -13,6 +13,7 @@ window.KATANA_WORK = {
       description: "Campaigns built for the first three seconds—and the ones that follow.",
       hue: 17,
       links: [
+        "https://drive.google.com/file/d/1jKGNyn_Li96WDWeLS_NIOORCsoPm1-oa/view?usp=sharing", // Reuploaded Ads — playback verified
         "https://drive.google.com/file/d/1L6ma7Of6NcBqVB5R-V2-FvFUhUXj2eA4/view?usp=sharing", // Ads 05 — playback verified
         "https://drive.google.com/file/d/1E-F5BsNZgux9IPH-zYqRq3RQTm14QK_j/view?usp=sharing"  // Ads 06 — playback verified
       ]
@@ -23,7 +24,10 @@ window.KATANA_WORK = {
       cardName: "Story",
       description: "Stories, formats and ideas made for the scroll.",
       hue: 29,
-      links: []
+      links: [
+        "https://drive.google.com/file/d/1AduT0FPjUAjkh2gqYr4WJJg-T1em8K6d/view?usp=sharing", // Video-21781 — playback verified
+        "https://drive.google.com/file/d/1Z05wK_C2YMP1qCeF7Gt0yCCFroXnHgYD/view?usp=sharing"  // Video-95748 — playback verified
+      ]
     },
     {
       id: "edits",
@@ -31,7 +35,9 @@ window.KATANA_WORK = {
       cardName: "Edit",
       description: "Rhythm, timing and detail—cut to keep you watching.",
       hue: 8,
-      links: []
+      links: [
+        "https://drive.google.com/file/d/1zzCKdlZQO6pDDQHkXsbrbPJUAx6AFMAq/view?usp=sharing" // f r sample — playback verified
+      ]
     },
     {
       id: "fashion",
