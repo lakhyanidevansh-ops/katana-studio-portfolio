@@ -156,6 +156,7 @@
     const url = card.dataset.videoUrl.trim();
     const title = card.dataset.title;
     const category = card.dataset.category;
+    dialog.classList.remove("is-portrait");
     dialogTitle.textContent = title;
     dialogCategory.textContent = `${category.toUpperCase()} / VIDEO`;
 
@@ -179,6 +180,11 @@
         video.controls = true;
         video.autoplay = true;
         video.playsInline = true;
+        video.addEventListener("loadedmetadata", () => {
+          if (playerFrame.contains(video)) {
+            dialog.classList.toggle("is-portrait", video.videoHeight > video.videoWidth);
+          }
+        }, { once: true });
         playerFrame.replaceChildren(video);
       }
     }
@@ -194,6 +200,7 @@
     if (event.target === dialog) closeDialog();
   });
   dialog.addEventListener("close", () => {
+    dialog.classList.remove("is-portrait");
     showEmptyState("This project is waiting for its link.");
   });
 
