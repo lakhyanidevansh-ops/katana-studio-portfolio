@@ -58,7 +58,8 @@
     const grid = document.createElement("div");
     grid.className = "work-grid";
 
-    category.links.forEach((url, index) => {
+    category.links.forEach((project, index) => {
+      const url = typeof project === "string" ? project : project.url;
       const projectTitle = `${category.cardName} ${pad(index + 1)}`;
       const card = document.createElement("button");
       card.type = "button";
@@ -73,6 +74,17 @@
       const poster = document.createElement("span");
       poster.className = "work-card__poster";
       poster.setAttribute("aria-hidden", "true");
+
+      if (project.thumbnail) {
+        const thumbnail = document.createElement("img");
+        thumbnail.className = "poster-image";
+        thumbnail.src = project.thumbnail;
+        thumbnail.alt = "";
+        thumbnail.loading = "lazy";
+        thumbnail.decoding = "async";
+        thumbnail.addEventListener("error", () => thumbnail.remove(), { once: true });
+        poster.append(thumbnail);
+      }
 
       const orbit = document.createElement("span");
       orbit.className = "poster-orbit";
