@@ -12,15 +12,12 @@ const katanaVideo = (filename) => {
 
   return KATANA_VIDEO_ASSETS + encodeURIComponent(releaseFilename);
 };
-const repeatedVideos = (sources, thumbnails = []) => {
-  const videos = sources.map((source, index) => ({
-    url: /^https?:\/\//i.test(source) ? source : katanaVideo(source),
-    thumbnail: thumbnails[index]
-      ? `assets/thumbnails/${encodeURIComponent(thumbnails[index])}`
-      : ""
-  }));
-  return [...videos, ...videos.map((video) => ({ ...video }))];
-};
+const videoEntries = (sources, thumbnails = []) => sources.map((source, index) => ({
+  url: /^https?:\/\//i.test(source) ? source : katanaVideo(source),
+  thumbnail: thumbnails[index]
+    ? `assets/thumbnails/${encodeURIComponent(thumbnails[index])}`
+    : ""
+}));
 
 window.KATANA_WORK = {
   email: "hello@yourdomain.com",
@@ -30,11 +27,17 @@ window.KATANA_WORK = {
       title: "Ads",
       cardName: "Campaign",
       hue: 17,
-      links: repeatedVideos([
+      links: videoEntries([
+        "Video-72566.mp4",
+        "vidssave.com Behaveneu AD 1080P.mp4",
+        "vidssave.com BNI commercial 720P.mp4",
         "https://drive.google.com/file/d/1ZIGL33HgNs2xMyVgl5y2LT3bODFfSfzb/view?usp=sharing",
         "https://drive.google.com/file/d/14K_KHn9d3o6UK56b9FHqSeJl4-y2pbrM/view?usp=sharing",
         "https://drive.google.com/file/d/1eb6B2A8JyYuml7bvK9TJ160ejVrU4W9c/view?usp=sharing"
       ], [
+        "matinoz TVC.jpg",
+        "BehaveNeu Brand video.jpg",
+        "BNI Brand shoot.jpg",
         "Grew Solar Brand film.jpg.jpeg",
         "The Architecture brand podcast.jpg.jpeg",
         "SANMACH Machinery product film.jpg.jpeg"
@@ -45,7 +48,7 @@ window.KATANA_WORK = {
       title: "Content",
       cardName: "Creator",
       hue: 29,
-      links: repeatedVideos([
+      links: videoEntries([
         "Video-13962.mp4",
         "Video-20696.mp4",
         "Video-21781.mp4",
@@ -68,7 +71,7 @@ window.KATANA_WORK = {
       title: "Edits",
       cardName: "Edit",
       hue: 17,
-      links: repeatedVideos([
+      links: videoEntries([
         "f r sample.mp4",
         "Halucinated Vinyl Crown Promo Work.mp4",
         "portfo3.mp4",
@@ -80,7 +83,7 @@ window.KATANA_WORK = {
       title: "Fashion",
       cardName: "Fashion",
       hue: 17,
-      links: repeatedVideos([
+      links: videoEntries([
         "Video-22081.mp4",
         "Video-255.mp4",
         "Video-63388.mp4",
@@ -99,7 +102,7 @@ window.KATANA_WORK = {
       title: "Music Video Reels",
       cardName: "Music Reel",
       hue: 17,
-      links: repeatedVideos([
+      links: videoEntries([
         "Video-13163.mp4",
         "Video-50818.mp4",
         "Video-71735.mp4",
@@ -120,7 +123,7 @@ window.KATANA_WORK = {
       title: "Real Estate",
       cardName: "Property",
       hue: 17,
-      links: repeatedVideos([
+      links: videoEntries([
         "DPA 1.mp4",
         "DPA 3.mp4",
         "Serenity_Casa_10-05-25.2.mp4",
@@ -139,7 +142,7 @@ window.KATANA_WORK = {
       title: "UGC",
       cardName: "UGC",
       hue: 14,
-      links: repeatedVideos([
+      links: videoEntries([
         "2-7-26 Tech Hub Video.mp4",
         "7-7-26 Editing Creative Video.mp4",
         "A07.mp4",
