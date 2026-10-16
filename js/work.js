@@ -12,9 +12,9 @@ const katanaVideo = (filename) => {
 
   return KATANA_VIDEO_ASSETS + encodeURIComponent(releaseFilename);
 };
-const repeatedVideos = (filenames, thumbnails = []) => {
-  const videos = filenames.map((filename, index) => ({
-    url: katanaVideo(filename),
+const repeatedVideos = (sources, thumbnails = []) => {
+  const videos = sources.map((source, index) => ({
+    url: /^https?:\/\//i.test(source) ? source : katanaVideo(source),
     thumbnail: thumbnails[index]
       ? `assets/thumbnails/${encodeURIComponent(thumbnails[index])}`
       : ""
@@ -31,13 +31,13 @@ window.KATANA_WORK = {
       cardName: "Campaign",
       hue: 17,
       links: repeatedVideos([
-        "Video-72566.mp4",
-        "vidssave.com Behaveneu AD 1080P.mp4",
-        "vidssave.com BNI commercial 720P.mp4"
+        "https://drive.google.com/file/d/1ZIGL33HgNs2xMyVgl5y2LT3bODFfSfzb/view?usp=sharing",
+        "https://drive.google.com/file/d/14K_KHn9d3o6UK56b9FHqSeJl4-y2pbrM/view?usp=sharing",
+        "https://drive.google.com/file/d/1eb6B2A8JyYuml7bvK9TJ160ejVrU4W9c/view?usp=sharing"
       ], [
-        "matinoz TVC.jpg",
-        "BehaveNeu Brand video.jpg",
-        "BNI Brand shoot.jpg"
+        "Grew Solar Brand film.jpg.jpeg",
+        "The Architecture brand podcast.jpg.jpeg",
+        "SANMACH Machinery product film.jpg.jpeg"
       ])
     },
     {
@@ -111,7 +111,8 @@ window.KATANA_WORK = {
         "Blues.jpg",
         "Mota bhai 01.jpg",
         "Mota bhai 02.jpg",
-        "Mystic the wiz.jpg"
+        "Mystic the wiz.jpg",
+        "Music Video Reel 06.png"
       ])
     },
     {
