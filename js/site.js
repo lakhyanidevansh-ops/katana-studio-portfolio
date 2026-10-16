@@ -13,6 +13,17 @@
   if (!data || !Array.isArray(data.categories)) return;
 
   const pad = (number) => String(number).padStart(2, "0");
+  const thumbnailTitle = (path) => {
+    if (!path) return "";
+    const filename = path.split("/").pop() || "";
+    let decodedFilename = filename;
+    try {
+      decodedFilename = decodeURIComponent(filename);
+    } catch {
+      // Keep the original filename if the URL encoding is malformed.
+    }
+    return decodedFilename.replace(/(?:\.(?:jpe?g|png|webp|gif|avif))+$/i, "").trim();
+  };
   const visibleCategories = data.categories.filter((category) => category.links.length > 0);
   const totalVideos = visibleCategories.reduce((sum, category) => sum + category.links.length, 0);
   document.querySelector("[data-total-categories]").textContent = pad(visibleCategories.length);
@@ -60,7 +71,7 @@
 
     category.links.forEach((project, index) => {
       const url = typeof project === "string" ? project : project.url;
-      const projectTitle = `${category.cardName} ${pad(index + 1)}`;
+      const projectTitle = project.title || thumbnailTitle(project.thumbnail) || `${category.cardName} ${pad(index + 1)}`;
       const card = document.createElement("button");
       card.type = "button";
       card.className = "work-card";
