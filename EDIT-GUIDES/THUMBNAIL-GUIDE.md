@@ -18,7 +18,7 @@ The text under a card uses the thumbnail filename with image extensions removed.
 
 The six Ads links are listed once each. Their thumbnails go in this order:
 
-1. Ads 01 — `matinoz TVC.jpg`
+1. Ads 01 — `matinoz TVC.jpg` (display title: **Matinoz TVC**)
 2. Ads 02 — `BehaveNeu Brand video.jpg`
 3. Ads 03 — `BNI Brand shoot.jpg`
 4. Ads 04 — `Grew Solar Brand film.jpg.jpeg`

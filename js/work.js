@@ -12,15 +12,18 @@ const katanaVideo = (filename) => {
 
   return KATANA_VIDEO_ASSETS + encodeURIComponent(releaseFilename);
 };
-const videoEntries = (sources, thumbnails = []) => sources.map((source, index) => ({
+const videoEntries = (sources, thumbnails = [], titles = []) => sources.map((source, index) => ({
   url: /^https?:\/\//i.test(source) ? source : katanaVideo(source),
   thumbnail: thumbnails[index]
     ? `assets/thumbnails/${encodeURIComponent(thumbnails[index])}`
-    : ""
+    : "",
+  title: titles[index] || ""
 }));
 
 window.KATANA_WORK = {
-  email: "hello@yourdomain.com",
+  email: "sales.katanastudios@gmail.com",
+  phone: "7486084751",
+  instagram: "https://www.instagram.com/katanastudio.ads?obrf=amhhZ3NrenA3ZWpw",
   categories: [
     {
       id: "ads",
@@ -41,6 +44,8 @@ window.KATANA_WORK = {
         "Grew Solar Brand film.jpg.jpeg",
         "The Architecture brand podcast.jpg.jpeg",
         "SANMACH Machinery product film.jpg.jpeg"
+      ], [
+        "Matinoz TVC"
       ])
     },
     {

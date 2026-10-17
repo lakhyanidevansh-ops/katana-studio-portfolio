@@ -21,8 +21,12 @@ links: videoEntries([
   "Grew Solar Brand film.jpg.jpeg",
   "The Architecture brand podcast.jpg.jpeg",
   "SANMACH Machinery product film.jpg.jpeg"
+], [
+  "Matinoz TVC"
 ])
 ```
+
+The optional third array sets custom display names. Ads 01 uses it to capitalize the M in **Matinoz TVC**.
 
 The first three names must match video assets in the GitHub Release. For a Drive video, replace the full URL in the matching position. Keep the thumbnail at the same index so its cover stays with that video.
 

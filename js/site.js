@@ -31,13 +31,24 @@
   document.querySelector("[data-nav-video-total]").textContent = pad(totalVideos);
   document.querySelector("[data-year]").textContent = new Date().getFullYear();
 
-  const email = (data.email || "hello@yourdomain.com").trim();
+  const email = (data.email || "sales.katanastudios@gmail.com").trim();
   document.querySelectorAll("[data-email-link]").forEach((link) => {
     link.href = `mailto:${email}`;
   });
   document.querySelectorAll("[data-email-text]").forEach((link) => {
     link.href = `mailto:${email}`;
     link.textContent = email;
+  });
+  const phone = (data.phone || "").trim();
+  document.querySelectorAll("[data-phone-link]").forEach((link) => {
+    link.href = `tel:${phone.replace(/[^\d+]/g, "")}`;
+  });
+  document.querySelectorAll("[data-phone-text]").forEach((link) => {
+    link.textContent = phone;
+  });
+  const instagram = (data.instagram || "").trim();
+  document.querySelectorAll("[data-instagram-link]").forEach((link) => {
+    link.href = instagram;
   });
 
   const playIcon = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1.15c0-.7.75-1.13 1.35-.77l7.1 4.27a1.57 1.57 0 0 1 0 2.7l-7.1 4.27C2.75 11.98 2 11.55 2 10.85z"/></svg>';
