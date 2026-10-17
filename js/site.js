@@ -251,3 +251,4 @@
     document.querySelectorAll(".work-section").forEach((section) => observer.observe(section));
   }
 })();
+

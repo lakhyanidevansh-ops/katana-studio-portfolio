@@ -31,9 +31,9 @@ Hosting details:
 - Website repo: https://github.com/lakhyanidevansh-ops/katana-studio-portfolio
 - Video release assets currently point to: https://github.com/lakhyanidevansh-ops/katana-studios/releases/download/katana-portfolio-videos-v1/ . `katanaVideo()` in js/work.js trims filenames, removes parentheses, changes spaces to periods, collapses repeated periods, and URL-encodes the result. Preserve this rule unless verified release names are changed.
 - Ads 04, 05 and 06 use these Google Drive URLs (keep exact unless owner supplies replacements):
-  04 https://drive.google.com/file/d/1ZIGL33HgNs2xMyVgl5y2LT3bODFfSfzb/view?usp=sharing
-  05 https://drive.google.com/file/d/14K_KHn9d3o6UK56b9FHqSeJl4-y2pbrM/view?usp=sharing
-  06 https://drive.google.com/file/d/1eb6B2A8JyYuml7bvK9TJ160ejVrU4W9c/view?usp=sharing
+  04 https://drive.google.com/file/d/14K_KHn9d3o6UK56b9FHqSeJl4-y2pbrM/view?usp=sharing
+  05 https://drive.google.com/file/d/1eb6B2A8JyYuml7bvK9TJ160ejVrU4W9c/view?usp=sharing
+  06 https://drive.google.com/file/d/1ZIGL33HgNs2xMyVgl5y2LT3bODFfSfzb/view?usp=sharing
 - Drive videos need General access “Anyone with the link — Viewer”. Drive can still reject some video codecs/formats; diagnose the host/file before claiming a site code fix.
 - All 42 card thumbnail images are in assets/thumbnails/. Use exact spelling/case/extension. The card title is derived from the thumbnail filename with image suffixes removed; Ads 01 has custom title “Matinoz TVC” (capital M).
 

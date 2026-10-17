@@ -9,9 +9,9 @@ Edit `js/work.js`. Each category calls `videoEntries(sources, thumbnails, titles
 | Ads 01 — Matinoz TVC | `Video-72566.mp4` (GitHub Release) | `matinoz TVC.jpg` |
 | Ads 02 | `vidssave.com Behaveneu AD 1080P.mp4` (GitHub Release) | `BehaveNeu Brand video.jpg` |
 | Ads 03 | `vidssave.com BNI commercial 720P.mp4` (GitHub Release) | `BNI Brand shoot.jpg` |
-| Ads 04 | `https://drive.google.com/file/d/1ZIGL33HgNs2xMyVgl5y2LT3bODFfSfzb/view?usp=sharing` | `Grew Solar Brand film.jpg.jpeg` |
-| Ads 05 | `https://drive.google.com/file/d/14K_KHn9d3o6UK56b9FHqSeJl4-y2pbrM/view?usp=sharing` | `The Architecture brand podcast.jpg.jpeg` |
-| Ads 06 | `https://drive.google.com/file/d/1eb6B2A8JyYuml7bvK9TJ160ejVrU4W9c/view?usp=sharing` | `SANMACH Machinery product film.jpg.jpeg` |
+| Ads 04 | `https://drive.google.com/file/d/14K_KHn9d3o6UK56b9FHqSeJl4-y2pbrM/view?usp=sharing` | `Grew Solar Brand film.jpg.jpeg` |
+| Ads 05 | `https://drive.google.com/file/d/1eb6B2A8JyYuml7bvK9TJ160ejVrU4W9c/view?usp=sharing` | `The Architecture brand podcast.jpg.jpeg` |
+| Ads 06 | `https://drive.google.com/file/d/1ZIGL33HgNs2xMyVgl5y2LT3bODFfSfzb/view?usp=sharing` | `SANMACH Machinery product film.jpg.jpeg` |
 | Content 01 | `Video-13962.mp4` (GitHub Release) | `Marketing Content 01.jpg` |
 | Content 02 | `Video-20696.mp4` (GitHub Release) | `Marketing Content 02.jpg` |
 | Content 03 | `Video-21781.mp4` (GitHub Release) | `Marketing Content 03.jpg` |
@@ -23,31 +23,31 @@ Edit `js/work.js`. Each category calls `videoEntries(sources, thumbnails, titles
 | Edits 02 | `Halucinated Vinyl Crown Promo Work.mp4` (GitHub Release) | `Edit 02.jpg` |
 | Edits 03 | `portfo3.mp4` (GitHub Release) | `Edit 03.jpg` |
 | Edits 04 | `profecialnal edit.mp4` (GitHub Release) | `Edit 04.jpg` |
-| Fashion 01 | `Video-22081.mp4` (GitHub Release) | `Craftroots 01.jpg` |
-| Fashion 02 | `Video-255.mp4` (GitHub Release) | `Craftroots 02.jpg` |
-| Fashion 03 | `Video-63388.mp4` (GitHub Release) | `Craftroots 03.jpg` |
-| Fashion 04 | `Video-78819.mp4` (GitHub Release) | `Craftroots 04.jpg` |
-| Fashion 05 | `Video-97752.mp4` (GitHub Release) | `Pantaloons diwali.jpg` |
-| Music Video Reels 01 | `Video-13163.mp4` (GitHub Release) | `Atish reel .jpg` |
-| Music Video Reels 02 | `Video-50818.mp4` (GitHub Release) | `Blues.jpg` |
-| Music Video Reels 03 | `Video-71735.mp4` (GitHub Release) | `Mota bhai 01.jpg` |
+| Fashion 01 | `Video-255.mp4` (GitHub Release) | `Craftroots 01.jpg` |
+| Fashion 02 | `Video-22081.mp4` (GitHub Release) | `Craftroots 02.jpg` |
+| Fashion 03 | `Video-78819.mp4` (GitHub Release) | `Craftroots 03.jpg` |
+| Fashion 04 | `Video-97752.mp4` (GitHub Release) | `Craftroots 04.jpg` |
+| Fashion 05 | `Video-63388.mp4` (GitHub Release) | `Pantaloons diwali.jpg` |
+| Music Video Reels 01 | `Video-71735.mp4` (GitHub Release) | `Atish reel .jpg` |
+| Music Video Reels 02 | `Video-94622.mp4` (GitHub Release) | `Blues.jpg` |
+| Music Video Reels 03 | `Video-50818.mp4` (GitHub Release) | `Mota bhai 01.jpg` |
 | Music Video Reels 04 | `Video-91448.mp4` (GitHub Release) | `Mota bhai 02.jpg` |
-| Music Video Reels 05 | `Video-93650.mp4` (GitHub Release) | `Mystic the wiz.jpg` |
-| Music Video Reels 06 | `Video-94622.mp4` (GitHub Release) | `Music Video Reel 06.png` |
+| Music Video Reels 05 | `Video-13163.mp4` (GitHub Release) | `Mystic the wiz.jpg` |
+| Music Video Reels 06 | `Video-93650.mp4` (GitHub Release) | `Music Video Reel 06.png` |
 | Real Estate 01 | `DPA 1.mp4` (GitHub Release) | `DPA 01.jpg` |
-| Real Estate 02 | `DPA 3.mp4` (GitHub Release) | `DPA 03.jpg` |
-| Real Estate 03 | `Serenity_Casa_10-05-25.2.mp4` (GitHub Release) | `DPA 02.jpg` |
+| Real Estate 02 | `Serenity_Casa_10-05-25.2.mp4` (GitHub Release) | `DPA 02.jpg` |
+| Real Estate 03 | `DPA 3.mp4` (GitHub Release) | `DPA 03.jpg` |
 | Real Estate 04 | `the garden video 1 28-5-2025.mp4` (GitHub Release) | `DPA 04.jpg` |
 | Real Estate 05 | `the garden video 7-6-2025.mp4` (GitHub Release) | `DPA 05.jpg` |
-| UGC 01 | `2-7-26 Tech Hub Video.mp4` (GitHub Release) | `BizKonnet 01.jpg` |
-| UGC 02 | `7-7-26 Editing Creative Video.mp4` (GitHub Release) | `Book piblishing.jpg` |
-| UGC 03 | `A07.mp4` (GitHub Release) | `TOPS 01.jpg` |
+| UGC 01 | `A07.mp4` (GitHub Release) | `BizKonnet 01.jpg` |
+| UGC 02 | `UGC Sample (1).mp4` (GitHub Release) | `Book piblishing.jpg` |
+| UGC 03 | `2-7-26 Tech Hub Video.mp4` (GitHub Release) | `TOPS 01.jpg` |
 | UGC 04 | `Ahmedabad mirror  (1).mp4` (GitHub Release) | `Ahmedabad Mirror 01.jpg` |
 | UGC 05 | `Ahmedabad mirror .mp4` (GitHub Release) | `Ahmedabad Mirror 02.jpg` |
 | UGC 06 | `Doctor_skincare.mp4` (GitHub Release) | `Doctor skincare.jpg` |
-| UGC 07 | `Graphic Designing Pooja Final.mp4` (GitHub Release) | `TOPS 02.jpg` |
-| UGC 08 | `Jigar Thakkar Final Video.mp4` (GitHub Release) | `TOPS 03.jpg` |
-| UGC 09 | `UGC Sample (1).mp4` (GitHub Release) | `TOPS 04.jpg` |
+| UGC 07 | `7-7-26 Editing Creative Video.mp4` (GitHub Release) | `TOPS 02.jpg` |
+| UGC 08 | `Graphic Designing Pooja Final.mp4` (GitHub Release) | `TOPS 03.jpg` |
+| UGC 09 | `Jigar Thakkar Final Video.mp4` (GitHub Release) | `TOPS 04.jpg` |
 
 ## Replace a video URL
 
