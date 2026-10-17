@@ -1,27 +1,60 @@
-# Katana Studios
+# Katana Studios portfolio
 
-A responsive, static portfolio website for Katana Studios. The minimal visual identity uses the studio's brushmark, warm ivory, sumi ink and burgundy (`#8C2D3E`). Open `index.html` in a browser; the site uses plain HTML, CSS and JavaScript and has no build step.
+Responsive static video portfolio for Katana Studios. It uses plain HTML, CSS and JavaScript; there is no framework, package install or build step.
 
-## Add the videos
+## Run and deploy
 
-Edit `js/work.js` and replace a URL in any numbered slot with a public YouTube or Google Drive URL. The portfolio is currently populated with the studio's links. For example:
+- Open `index.html` directly, or serve this folder with any static file server.
+- Render service: **Static Site**.
+- Root Directory: repository root (leave blank).
+- Build Command: leave blank.
+- Publish Directory: `.`.
+- Website repository: <https://github.com/lakhyanidevansh-ops/katana-studio-portfolio>.
+- Current site code branch: `feat/katana-studios-portfolio`.
+- Most GitHub-hosted videos are Release assets in `lakhyanidevansh-ops/katana-studios`, tag `katana-portfolio-videos-v1`; three Ads links use Google Drive.
 
-```js
-"https://youtu.be/VIDEO_ID", // Ads 01 — paste video URL
-```
+## Files
 
-The seven sections are already set up with the requested card counts: Ads 6, Content 14, Edits 8, Fashion 10, Music Video Reels 12, Real Estate 10 and UGC 18. Keep the slots in order. Clicking a card opens its video in the on-page player.
+- `index.html` — page structure, metadata, navigation, contact and video dialog.
+- `css/styles.css` — colors, typography, cards, dialog and responsive layouts.
+- `js/work.js` — all category/video/thumbnail/title data and contact values.
+- `js/site.js` — category/card generation, playback modal and contact link wiring.
+- `assets/katana-brushmark-transparent.png`, `assets/favicon.svg` — brand assets.
+- `assets/thumbnails/` — the 42 portfolio cover images.
+- `EDIT-GUIDES/` — concrete link and thumbnail editing instructions.
+- `AI-HANDOFF-PROMPT.md` — full project brief to hand to another coding AI.
+- `PUSH-GUIDE.md` — how to publish future edits from this folder with GitHub Desktop or Git.
 
-For Google Drive playback, use a video file link and set access to **Anyone with the link**. The site supports YouTube watch, short and share links, plus Google Drive file links.
+## Actual unique portfolio entries
 
-Replace `hello@yourdomain.com` near the top of `js/work.js` with the studio's contact email.
+The displayed source data currently has 42 entries, without repeated video slots:
 
-## Project files
+| Section | Unique entries |
+| --- | ---: |
+| Ads | 6 |
+| Content | 7 |
+| Edits | 4 |
+| Fashion | 5 |
+| Music Video Reels | 6 |
+| Real Estate | 5 |
+| UGC | 9 |
+| **Total** | **42** |
 
-- `index.html` — page structure and copy
-- `css/styles.css` — design and responsive layout
-- `js/work.js` — editable categories, video links and contact email
-- `js/site.js` — project cards and embedded player
-- `assets/katana-brushmark-transparent.png` — Katana Studios logo mark
-- `assets/favicon.svg` — Katana Studios favicon in the brand palette
+The earlier requested per-section totals (6/14/8/10/12/10/18) add to 78, but the later instruction was to show each video once with no duplicates. The site reflects the actual unique clips available in `js/work.js`, not repeated cards to reach 78.
 
+## Editing work
+
+Follow `EDIT-GUIDES/LINK-GUIDE.md` and `EDIT-GUIDES/THUMBNAIL-GUIDE.md`. Video and thumbnail arrays use the same order; index 0 in each array describes the same card. Keep that pairing when replacing or adding a project.
+
+Set Google Drive videos to **Anyone with the link — Viewer**. Playback also depends on Drive supporting the video's codec and preview. YouTube share links and public direct video URLs are supported.
+
+## Brand and contact
+
+- Base: `#15110f`; raised `#1c1816`; surface `#241f1c`.
+- Main text: `#f5f1ed`; muted `#b4a9a1`.
+- Accent: `#ff704e`; accent light: `#ff9775`.
+- Fonts: Manrope and DM Mono (Google Fonts).
+- Email: `sales.katanastudios@gmail.com`.
+- Phone: `7486084751`.
+- Instagram: <https://www.instagram.com/katanastudio.ads?obrf=amhhZ3NrenA3ZWpw>.
+- “Start a conversation” WhatsApp link: <https://wa.me/917486087451>.

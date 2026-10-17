@@ -34,9 +34,9 @@ window.KATANA_WORK = {
         "Video-72566.mp4",
         "vidssave.com Behaveneu AD 1080P.mp4",
         "vidssave.com BNI commercial 720P.mp4",
-        "https://drive.google.com/file/d/1ZIGL33HgNs2xMyVgl5y2LT3bODFfSfzb/view?usp=sharing",
         "https://drive.google.com/file/d/14K_KHn9d3o6UK56b9FHqSeJl4-y2pbrM/view?usp=sharing",
-        "https://drive.google.com/file/d/1eb6B2A8JyYuml7bvK9TJ160ejVrU4W9c/view?usp=sharing"
+        "https://drive.google.com/file/d/1eb6B2A8JyYuml7bvK9TJ160ejVrU4W9c/view?usp=sharing",
+        "https://drive.google.com/file/d/1ZIGL33HgNs2xMyVgl5y2LT3bODFfSfzb/view?usp=sharing"
       ], [
         "matinoz TVC.jpg",
         "BehaveNeu Brand video.jpg",
@@ -89,11 +89,11 @@ window.KATANA_WORK = {
       cardName: "Fashion",
       hue: 17,
       links: videoEntries([
-        "Video-22081.mp4",
         "Video-255.mp4",
-        "Video-63388.mp4",
+        "Video-22081.mp4",
         "Video-78819.mp4",
-        "Video-97752.mp4"
+        "Video-97752.mp4",
+        "Video-63388.mp4"
       ], [
         "Craftroots 01.jpg",
         "Craftroots 02.jpg",
@@ -108,12 +108,12 @@ window.KATANA_WORK = {
       cardName: "Music Reel",
       hue: 17,
       links: videoEntries([
-        "Video-13163.mp4",
-        "Video-50818.mp4",
         "Video-71735.mp4",
+        "Video-94622.mp4",
+        "Video-50818.mp4",
         "Video-91448.mp4",
-        "Video-93650.mp4",
-        "Video-94622.mp4"
+        "Video-13163.mp4",
+        "Video-93650.mp4"
       ], [
         "Atish reel .jpg",
         "Blues.jpg",
@@ -130,14 +130,14 @@ window.KATANA_WORK = {
       hue: 17,
       links: videoEntries([
         "DPA 1.mp4",
-        "DPA 3.mp4",
         "Serenity_Casa_10-05-25.2.mp4",
+        "DPA 3.mp4",
         "the garden video 1 28-5-2025.mp4",
         "the garden video 7-6-2025.mp4"
       ], [
         "DPA 01.jpg",
-        "DPA 03.jpg",
         "DPA 02.jpg",
+        "DPA 03.jpg",
         "DPA 04.jpg",
         "DPA 05.jpg"
       ])
@@ -148,15 +148,15 @@ window.KATANA_WORK = {
       cardName: "UGC",
       hue: 14,
       links: videoEntries([
-        "2-7-26 Tech Hub Video.mp4",
-        "7-7-26 Editing Creative Video.mp4",
         "A07.mp4",
+        "UGC Sample (1).mp4",
+        "2-7-26 Tech Hub Video.mp4",
         "Ahmedabad mirror  (1).mp4",
         "Ahmedabad mirror .mp4",
         "Doctor_skincare.mp4",
+        "7-7-26 Editing Creative Video.mp4",
         "Graphic Designing Pooja Final.mp4",
-        "Jigar Thakkar Final Video.mp4",
-        "UGC Sample (1).mp4"
+        "Jigar Thakkar Final Video.mp4"
       ], [
         "BizKonnet 01.jpg",
         "Book piblishing.jpg",
@@ -171,4 +171,3 @@ window.KATANA_WORK = {
     }
   ]
 };
-
